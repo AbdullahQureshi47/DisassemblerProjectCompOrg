@@ -1,0 +1,53 @@
+# Executables created by Makefile #
+###################################
+disUtil
+disassembler
+
+# Compiled source #
+###################
+*.com
+*.class
+*.ctxt
+*.dll
+*.exe
+*.o
+*.obj
+*.pyc
+*.pyo
+*.so
+
+# IDE-specific project/package information #
+############################################
+*.classpath
+*.project
+**/bluej.pkg
+**/package.bluej
+*.cbp
+
+# Packages #
+############
+# it's better to commit the raw source; git has own compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor Backups #
+##################
+*.bak
+*.swp
+*~
+
