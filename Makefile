@@ -10,7 +10,11 @@ GCC=gcc -Wall -Wextra -Wpedantic -Wformat -Wshadow -Wredundant-decls \
 #  when you're ready to compile the disassembler project.
 
 all:	disUtil
+<<<<<<< HEAD
  all:	disUtil disassembler
+=======
+# all:	disUtil disassembler
+>>>>>>> 042018775e49950fa6eda065d387669c4247661c
 
 testArgs:	disassembler.h \
 		same.h \
@@ -60,5 +64,9 @@ disassembler:	disassembler.h \
 		    getRegName.c \
 		    printDebug.c printError.c disassembler.c -o disassembler
 
+<<<<<<< HEAD
 clean:
+=======
+clean: 
+>>>>>>> 042018775e49950fa6eda065d387669c4247661c
 	rm -rf *.o disUtil disassembler
