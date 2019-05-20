@@ -1,39 +1,24 @@
-# disassembler-assignments: Disassembler Assignments
-##  Disassembler Utility Functions, and <br> Working Disassember
+PROJECT TITLE: The Disassembler Project
+PURPOSE OF PROJECT: This program reads in Machine Language and writes out the corresponding assembly language code.
 
-### Disassembler Utility Functions
-This repository contains the starter code (including a `Makefile` and a
-template test file) for a program in which students will write and
-test two functions (`verifyMIPSInstruction` and `binToDec`).  These
-functions will be useful in the Disassembler program to be written later.
-(See [here](http://www.cs.kzoo.edu/cs230/Projects/DisUtilitiesProj.html)
-for the project description for this program.)
+VERSION or DATE: 5/20/2019
 
-The provided code processes 2 optional command-line arguments, a file name
-and a debugging indicator, reads in lines from the file (or standard input,
-if no file name is provided), and prints the lines back out to standard
-output.  If debugging is turned on, it also prints the length of the line.
-To compile the initial provided code, type `make testArgs`.
-Look at the code in `disUtil.c` to see what it does, then try the following
-tests:
-    ./testArgs testfileStarter.txt 0
-    ./testArgs testfileStarter.txt 1
-    ./testArgs 0 testfileStarter.txt
-    ./testArgs 1 testfileStarter.txt
-    ./testArgs testfileStarter.txt
-If you test it without providing a file name, it will wait for you to type
-in the input; you can do this line-by-line, typing Control-D (end-of-file)
-when you're done.  For example:
-    ./testArgs 1
-    Hi there!
-    Just testing ...
-    Control-D
+HOW TO START THIS PROJECT: To starts this project the user first needs to open up the Ubuntu or any other linux/unix terminal and access the folder containing the project.
+Then the user needs to compile the program using the make command. The user needs to type 'make disassembler' to compile project.
+Now that the project is compiled the user needs to needs to run the program to see the results. The user needs to use the following instruction:
+"./disassembler testfileStarter.txt".
+This would run the program for the user.   
 
-Once you are comfortable with `disUtil.c` you should write and test the
-two functions for this assignment: `verifyMIPSInstruction` and `binToDec`.
+AUTHORS: Abdullah Qureshi and Lincoln Wang
+USER INSTRUCTIONS:
+The user should expect a MIPS instruction as an output. Following is a sample input and its corresponding output of the program:
+Input:
+100011	01001	01000	0000 0100 1011 0000
+000000	10010	01000	01000	00000	100000
+101011	01001	01000	0000 0100 1011 0000
+Output:
+lw   $t0, 1200($t1)
+add  $t0, $s2, $t0
+sw   $t0, 1200($t1)
 
-### Working Disassembler
-The repository also contains some additional starter code for the
-full disassembler program.
-(See [here](http://www.cs.kzoo.edu/cs230/Projects/DisassemblerProj.html)
-for the project description for the full disassembler program.)
+Furthermore, the user can add valid binary instructions to the test file and the program will output valid MIPS instructions associated with the code. 
